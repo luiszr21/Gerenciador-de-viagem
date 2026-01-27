@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-login {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+background: linear-gradient(135deg, #6CC551, #1F3D1A);
+}
+
+.titulo {
+    text-align: right;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;  
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+.input-login {
+    width: 20rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    
+}
+.botao {
+    width: 20rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    background-color: #47624F;
+    color: white;
+    cursor: pointer;
+}
+.botao:hover {
+    background-color: #6CC551;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
