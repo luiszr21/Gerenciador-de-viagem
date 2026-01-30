@@ -1,48 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
+.login-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(20, 60, 30, 0.65),
+    rgba(20, 60, 30, 0.35)
+  );
+  z-index: 0;
+}
+
+.welcome-message {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.titulo_login {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #964B00;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.paragrafo_login {
+  font-size: 1.8rem;
+  color: #964B00;
+  margin-top: -0.5rem;
+  font-weight: 700;
+}
+
+
 .container-login {
-    gap: 2rem;
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-background: linear-gradient(135deg, #6CC551, #1F3D1A);
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
-    text-align: right;
-    color: #000;
-    font-family: Arial, sans-serif;
-    font-size: 2.5rem;  
-    font-weight: bold;
-    margin-bottom: 1rem;
-    
+  text-align: right;
+  color: #245a1ca6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
+
 .input-login {
-    width: 20rem;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    
+  width: 20rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  outline: none;
 }
+
 .botao {
-    width: 20rem;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    background-color: #47624F;
-    color: white;
-    cursor: pointer;
+  width: 20rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  background-color: #47624F;
+  color: white;
+  cursor: pointer;
 }
 .botao:hover {
-    background-color: #6CC551;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #245a1ca6;
+  transition: background-color 0.3s ease;
+}
+
+a{
+    color: #245a1ca6;
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: underline;
 }
